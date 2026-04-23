@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="1,2,3,4,5">
+
+    <!-- Title -->
+    <TableRow>
+        <TextView
+            android:layout_span="6"
+            android:text="Stand-Up Feedback Form"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"/>
+    </TableRow>
+
+    <!-- Event Date -->
+    <TableRow>
+        <TextView android:text="Event Date"/>
+
+        <EditText
+            android:layout_span="5"
+            android:hint="MM/DD/YYYY"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <!-- Event Location -->
+
+
+    <!-- Feedback Heading -->
+    <TableRow>
+        <TextView
+            android:layout_span="6"
+            android:text="Your Feedback"
+            android:textStyle="bold"
+            android:paddingTop="10dp"/>
+    </TableRow>
+
+    <!-- Header -->
+    <TableRow>
+        <TextView android:text=""/>
+        <TextView android:text="Very Good"/>
+        <TextView android:text="Good"/>
+        <TextView android:text="Fair"/>
+        <TextView android:text="Poor"/>
+        <TextView android:text="Very Poor"/>
+    </TableRow>
+
+    <!-- Row 1 -->
+    <TableRow>
+        <TextView android:text="Comedian"/>
+        <RadioButton/>
+        <RadioButton/>
+        <RadioButton/>
+        <RadioButton/>
+        <RadioButton/>
+    </TableRow>
+
+    <!-- Row 2 -->
+    <TableRow>
+        <TextView android:text="Audience"/>
+        <RadioButton/>
+        <RadioButton/>
+        <RadioButton/>
+        <RadioButton/>
+        <RadioButton/>
+    </TableRow>
+
+    <!-- Row 3 -->
+    <TableRow>
+        <TextView android:text="Venue"/>
+        <RadioButton/>
+        <RadioButton/>
+
+        <RadioButton tools:ignore="TouchTargetSizeCheck" />
+        <RadioButton/>
+        <RadioButton/>
+    </TableRow>
+
+    <!-- Submit Button -->
+    <TableRow>
+        <Button
+            android:id="@+id/button1"
+            android:layout_span="6"
+            android:text="SUBMIT FORM"
+            android:layout_marginTop="20dp"/>
+    </TableRow>
+
+    <!-- Message -->
+    <TableRow>
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_span="6"
+            android:text=""
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#008000"
+            android:layout_marginTop="10dp"/>
+    </TableRow>
+
+</TableLayout>
